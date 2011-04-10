@@ -1,0 +1,243 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3375), pid=12487, tid=140620510885632
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_24-b07
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (19.1-b02 mixed mode linux-amd64 compressed oops)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000040df2000):  JavaThread "Unknown thread" [_thread_in_vm, id=12489, stack(0x00007fe4c3897000,0x00007fe4c3998000)]
+
+Stack: [0x00007fe4c3897000,0x00007fe4c3998000],  sp=0x00007fe4c3996120,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x790f75]
+V  [libjvm.so+0x3250b6]
+V  [libjvm.so+0x2b12d5]
+V  [libjvm.so+0x2b780f]
+V  [libjvm.so+0x71f63f]
+V  [libjvm.so+0x71d625]
+V  [libjvm.so+0x71c3b1]
+V  [libjvm.so+0x71bfc4]
+V  [libjvm.so+0x720e20]
+V  [libjvm.so+0x720eb5]
+V  [libjvm.so+0x720f95]
+V  [libjvm.so+0x720d58]
+V  [libjvm.so+0x767808]
+V  [libjvm.so+0x769719]
+V  [libjvm.so+0x3eb7bc]
+V  [libjvm.so+0x74fbef]
+V  [libjvm.so+0x457cb0]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000040df2000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=12489, stack(0x00007fe4c3897000,0x00007fe4c3998000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 07:00 393504                             /usr/lib/jvm/java-6-sun-1.6.0.24/jre/bin/java
+40108000-4010a000 rwxp 00008000 07:00 393504                             /usr/lib/jvm/java-6-sun-1.6.0.24/jre/bin/java
+40de9000-40e4c000 rwxp 00000000 00:00 0                                  [heap]
+db800000-dccc0000 rwxp 00000000 00:00 0 
+dccc0000-e0a00000 rwxp 00000000 00:00 0 
+e0a00000-e1ef0000 rwxp 00000000 00:00 0 
+e1ef0000-f58b0000 rwxp 00000000 00:00 0 
+f58b0000-f6320000 rwxp 00000000 00:00 0 
+f6320000-100000000 rwxp 00000000 00:00 0 
+7fe4bf561000-7fe4bf5d7000 r-xs 00902000 07:00 5459                       /home/nhowell/android-sdk-linux_86/platforms/android-10/android.jar
+7fe4bf5d7000-7fe4bf5ff000 rwxp 00000000 00:00 0 
+7fe4bf5ff000-7fe4bf600000 ---p 00000000 00:00 0 
+7fe4bf600000-7fe4bf700000 rwxp 00000000 00:00 0 
+7fe4bf700000-7fe4bf701000 ---p 00000000 00:00 0 
+7fe4bf701000-7fe4bf80c000 rwxp 00000000 00:00 0 
+7fe4bf80c000-7fe4bf82a000 rwxp 00000000 00:00 0 
+7fe4bf82a000-7fe4bf835000 rwxp 00000000 00:00 0 
+7fe4bf835000-7fe4bf8d2000 rwxp 00000000 00:00 0 
+7fe4bf8d2000-7fe4bf8dd000 rwxp 00000000 00:00 0 
+7fe4bf8dd000-7fe4bf8fb000 rwxp 00000000 00:00 0 
+7fe4bf8fb000-7fe4bf906000 rwxp 00000000 00:00 0 
+7fe4bf906000-7fe4bf9a2000 rwxp 00000000 00:00 0 
+7fe4bf9a2000-7fe4bf9a8000 rwxp 00000000 00:00 0 
+7fe4bf9a8000-7fe4bf9f6000 rwxp 00000000 00:00 0 
+7fe4bf9f6000-7fe4bfc67000 rwxp 00000000 00:00 0 
+7fe4bfc67000-7fe4c29f7000 rwxp 00000000 00:00 0 
+7fe4c29f7000-7fe4c2a05000 r-xp 00000000 07:00 663239                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7fe4c2a05000-7fe4c2b07000 ---p 0000e000 07:00 663239                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7fe4c2b07000-7fe4c2b0a000 rwxp 00010000 07:00 663239                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7fe4c2b0a000-7fe4c2b0b000 rwxp 00000000 00:00 0 
+7fe4c2b0b000-7fe4c2b17000 r-xp 00000000 07:00 1451831                    /lib/libnss_files-2.12.1.so
+7fe4c2b17000-7fe4c2d16000 ---p 0000c000 07:00 1451831                    /lib/libnss_files-2.12.1.so
+7fe4c2d16000-7fe4c2d17000 r-xp 0000b000 07:00 1451831                    /lib/libnss_files-2.12.1.so
+7fe4c2d17000-7fe4c2d18000 rwxp 0000c000 07:00 1451831                    /lib/libnss_files-2.12.1.so
+7fe4c2d18000-7fe4c2d22000 r-xp 00000000 07:00 1451826                    /lib/libnss_nis-2.12.1.so
+7fe4c2d22000-7fe4c2f21000 ---p 0000a000 07:00 1451826                    /lib/libnss_nis-2.12.1.so
+7fe4c2f21000-7fe4c2f22000 r-xp 00009000 07:00 1451826                    /lib/libnss_nis-2.12.1.so
+7fe4c2f22000-7fe4c2f23000 rwxp 0000a000 07:00 1451826                    /lib/libnss_nis-2.12.1.so
+7fe4c2f23000-7fe4c2f2b000 r-xp 00000000 07:00 1451828                    /lib/libnss_compat-2.12.1.so
+7fe4c2f2b000-7fe4c312a000 ---p 00008000 07:00 1451828                    /lib/libnss_compat-2.12.1.so
+7fe4c312a000-7fe4c312b000 r-xp 00007000 07:00 1451828                    /lib/libnss_compat-2.12.1.so
+7fe4c312b000-7fe4c312c000 rwxp 00008000 07:00 1451828                    /lib/libnss_compat-2.12.1.so
+7fe4c312c000-7fe4c3133000 r-xp 00000000 07:00 679938                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7fe4c3133000-7fe4c3234000 ---p 00007000 07:00 679938                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7fe4c3234000-7fe4c3236000 rwxp 00008000 07:00 679938                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7fe4c3236000-7fe4c3237000 rwxp 00000000 00:00 0 
+7fe4c3237000-7fe4c324e000 r-xp 00000000 07:00 1451830                    /lib/libnsl-2.12.1.so
+7fe4c324e000-7fe4c344d000 ---p 00017000 07:00 1451830                    /lib/libnsl-2.12.1.so
+7fe4c344d000-7fe4c344e000 r-xp 00016000 07:00 1451830                    /lib/libnsl-2.12.1.so
+7fe4c344e000-7fe4c344f000 rwxp 00017000 07:00 1451830                    /lib/libnsl-2.12.1.so
+7fe4c344f000-7fe4c3451000 rwxp 00000000 00:00 0 
+7fe4c3451000-7fe4c347a000 r-xp 00000000 07:00 663238                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7fe4c347a000-7fe4c3579000 ---p 00029000 07:00 663238                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7fe4c3579000-7fe4c3580000 rwxp 00028000 07:00 663238                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7fe4c3580000-7fe4c358d000 r-xp 00000000 07:00 660261                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7fe4c358d000-7fe4c368c000 ---p 0000d000 07:00 660261                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7fe4c368c000-7fe4c368f000 rwxp 0000c000 07:00 660261                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7fe4c368f000-7fe4c3696000 r-xp 00000000 07:00 1446692                    /lib/librt-2.12.1.so
+7fe4c3696000-7fe4c3895000 ---p 00007000 07:00 1446692                    /lib/librt-2.12.1.so
+7fe4c3895000-7fe4c3896000 r-xp 00006000 07:00 1446692                    /lib/librt-2.12.1.so
+7fe4c3896000-7fe4c3897000 rwxp 00007000 07:00 1446692                    /lib/librt-2.12.1.so
+7fe4c3897000-7fe4c389a000 ---p 00000000 00:00 0 
+7fe4c389a000-7fe4c3998000 rwxp 00000000 00:00 0 
+7fe4c3998000-7fe4c3a1a000 r-xp 00000000 07:00 1446726                    /lib/libm-2.12.1.so
+7fe4c3a1a000-7fe4c3c19000 ---p 00082000 07:00 1446726                    /lib/libm-2.12.1.so
+7fe4c3c19000-7fe4c3c1a000 r-xp 00081000 07:00 1446726                    /lib/libm-2.12.1.so
+7fe4c3c1a000-7fe4c3c1b000 rwxp 00082000 07:00 1446726                    /lib/libm-2.12.1.so
+7fe4c3c1b000-7fe4c4459000 r-xp 00000000 07:00 663641                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7fe4c4459000-7fe4c4558000 ---p 0083e000 07:00 663641                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7fe4c4558000-7fe4c46ec000 rwxp 0083d000 07:00 663641                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7fe4c46ec000-7fe4c4725000 rwxp 00000000 00:00 0 
+7fe4c4725000-7fe4c489f000 r-xp 00000000 07:00 1446696                    /lib/libc-2.12.1.so
+7fe4c489f000-7fe4c4a9e000 ---p 0017a000 07:00 1446696                    /lib/libc-2.12.1.so
+7fe4c4a9e000-7fe4c4aa2000 r-xp 00179000 07:00 1446696                    /lib/libc-2.12.1.so
+7fe4c4aa2000-7fe4c4aa3000 rwxp 0017d000 07:00 1446696                    /lib/libc-2.12.1.so
+7fe4c4aa3000-7fe4c4aa8000 rwxp 00000000 00:00 0 
+7fe4c4aa8000-7fe4c4aaa000 r-xp 00000000 07:00 1451833                    /lib/libdl-2.12.1.so
+7fe4c4aaa000-7fe4c4caa000 ---p 00002000 07:00 1451833                    /lib/libdl-2.12.1.so
+7fe4c4caa000-7fe4c4cab000 r-xp 00002000 07:00 1451833                    /lib/libdl-2.12.1.so
+7fe4c4cab000-7fe4c4cac000 rwxp 00003000 07:00 1451833                    /lib/libdl-2.12.1.so
+7fe4c4cac000-7fe4c4cc4000 r-xp 00000000 07:00 1446701                    /lib/libpthread-2.12.1.so
+7fe4c4cc4000-7fe4c4ec3000 ---p 00018000 07:00 1446701                    /lib/libpthread-2.12.1.so
+7fe4c4ec3000-7fe4c4ec4000 r-xp 00017000 07:00 1446701                    /lib/libpthread-2.12.1.so
+7fe4c4ec4000-7fe4c4ec5000 rwxp 00018000 07:00 1446701                    /lib/libpthread-2.12.1.so
+7fe4c4ec5000-7fe4c4ec9000 rwxp 00000000 00:00 0 
+7fe4c4ec9000-7fe4c4ee9000 r-xp 00000000 07:00 1446778                    /lib/ld-2.12.1.so
+7fe4c4efd000-7fe4c4f07000 rwxp 00000000 00:00 0 
+7fe4c4f07000-7fe4c4fbd000 rwxp 00000000 00:00 0 
+7fe4c4fbd000-7fe4c4fc0000 rwxp 00000000 00:00 0 
+7fe4c4fc0000-7fe4c4fc7000 r-xp 00000000 07:00 660258                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7fe4c4fc7000-7fe4c50c8000 ---p 00007000 07:00 660258                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7fe4c50c8000-7fe4c50ca000 rwxp 00008000 07:00 660258                     /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7fe4c50ca000-7fe4c50cb000 rwxp 00000000 00:00 0 
+7fe4c50dd000-7fe4c50e5000 rwxs 00000000 07:00 9671                       /tmp/hsperfdata_nhowell/12487
+7fe4c50e5000-7fe4c50e6000 rwxp 00000000 00:00 0 
+7fe4c50e6000-7fe4c50e7000 r-xp 00000000 00:00 0 
+7fe4c50e7000-7fe4c50e9000 rwxp 00000000 00:00 0 
+7fe4c50e9000-7fe4c50ea000 r-xp 00020000 07:00 1446778                    /lib/ld-2.12.1.so
+7fe4c50ea000-7fe4c50eb000 rwxp 00021000 07:00 1446778                    /lib/ld-2.12.1.so
+7fe4c50eb000-7fe4c50ec000 rwxp 00000000 00:00 0 
+7fff66ed0000-7fff66ef1000 rwxp 00000000 00:00 0                          [stack]
+7fff66fc0000-7fff66fc1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:/home/nhowell/android-sdk-linux_86/platforms/android-10/android.jar:/home/nhowell/android-sdk-linux_86/add-ons/addon_google_apis_google_inc_10/libs/maps.jar 
+java_command: us.noura.example.Yelp
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+USERNAME=nhowell
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/amd64:/usr/lib/xulrunner-1.9.2.16
+SHELL=/bin/bash
+DISPLAY=:1.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x791b30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x791b30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x643780], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:squeeze/sid
+
+uname:Linux 2.6.35-28-generic #49-Ubuntu SMP Tue Mar 1 14:39:03 UTC 2011 x86_64
+libc:glibc 2.12.1 NPTL 2.12.1 
+rlimit: STACK 8192k, CORE 0k, NPROC infinity, NOFILE 1024, AS infinity
+load average:0.06 0.11 0.16
+
+/proc/meminfo:
+MemTotal:        2055500 kB
+MemFree:           51344 kB
+Buffers:          153152 kB
+Cached:           334284 kB
+SwapCached:          740 kB
+Active:          1069360 kB
+Inactive:         774192 kB
+Active(anon):     968300 kB
+Inactive(anon):   403568 kB
+Active(file):     101060 kB
+Inactive(file):   370624 kB
+Unevictable:        2412 kB
+Mlocked:              16 kB
+SwapTotal:        261116 kB
+SwapFree:         247756 kB
+Dirty:              2952 kB
+Writeback:             0 kB
+AnonPages:       1357972 kB
+Mapped:            66968 kB
+Shmem:             13340 kB
+Slab:              47080 kB
+SReclaimable:      25608 kB
+SUnreclaim:        21472 kB
+KernelStack:        2632 kB
+PageTables:        24024 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1288864 kB
+Committed_AS:    2512448 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      122912 kB
+VmallocChunk:   34359581180 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      381292 kB
+DirectMap2M:     1714176 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 2055500k(51344k free), swap 261116k(247756k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (19.1-b02) for linux-amd64 JRE (1.6.0_24-b07), built on Feb  2 2011 16:55:54 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Sun Apr 10 16:40:07 2011
+elapsed time: 0 seconds
+

@@ -1,0 +1,7 @@
+LearningToWebScrape is the Java project
+run Yelp.java
+prints to console the results of Yelp search
+
+GetYelpData is the Android project
+run Home.java
+displays output in textview the error message
