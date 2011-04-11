@@ -73,4 +73,12 @@ public class Yelp {
 
     return response;
   }
+  
+  public static String otherVenuesSearch(String term, double latitude, double longitude,
+		  String consumerKey, String consumerSecret, String token, String tokenSecret) {
+	    Yelp yelp = new Yelp(consumerKey, consumerSecret, token, tokenSecret);
+	    String response = yelp.search(term, latitude, longitude);
+
+	    return response;
+	  }
 }
